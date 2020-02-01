@@ -10,8 +10,7 @@ Communictions (IPC) */
 
 int main(int argc, char const *argv[]) {
 
-  // if file foo.txt does not exist then it is created with permission of 644.
-  // Inorder to represent number in octal prefix by 0
+  // if file foo.txt does not exist then it is created with permission of 644. Prefix by 0 for octal.
   int fd = open("foo.txt", O_RDWR | O_CREAT, 0644);
   if (fd ==-1)
     // print error code defined in error.h
