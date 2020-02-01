@@ -26,7 +26,7 @@ int main(int argc, char const *argv[]) {
     char buff[100];
     lseek(fd, 0, SEEK_SET);
     read(fd, buff, 100);
-    printf("Read from Child with PID=%d and Data=%s", pid, buff);
+    printf("Read from Child. Data=%s", buff);
   } else if(pid > 0) {
     // The wait() system call suspends execution of the current process until
     // one of its children terminates.
